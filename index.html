@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IFOAD-UJKZ - Accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <!-- HEADER PRINCIPAL -->
+<header class="d-flex justify-content-between align-items-center p-3 bg-light border-bottom shadow-sm position-relative">
+  <img src="img/logo_ifoad.jpg" alt="IFOAD" class="logo img-fluid" style="height: 60px; animation: fadeInLeft 1s ease-in-out;" />
+  <h1 class="text-center flex-grow-1 m-0 fw-bold text-primary" style="animation: fadeInDown 1s ease-in-out;">Bienvenue sur la plateforme IFOAD-UJKZ<br><span class="text-black" id="currentDate"></span></h1>
+  <img src="img/logo_ujkz.jpg" alt="UJKZ" class="logo img-fluid" style="height: 60px; animation: fadeInRight 1s ease-in-out;" />
+</header>
+
+<!-- BANDEAU DÉFILANT DES LOGOS UNIVERSITAIRES -->
+<div class="bg-white border-top py-2 overflow-hidden position-relative" style="height: 80px;">
+  <div class="d-flex align-items-center animate-scroll" style="animation: scrollLeft 200s linear infinite;">
+    
+    <div class="univ-logo mx-3" title="Université Joseph Ki-Zerbo"><img src="img/logo_ujkz.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Thomas Sankara"><img src="img/UTS.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Aube Nouvelle"><img src="img/logo_U_AUBEN.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Virtuelle du Burkina"><img src="img/logo_UV.png" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Nazi Boni"><img src="img/logo_UNB.png" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Norbert Zongo"><img src="img/logo_UNZ.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université de Fada N'Gourma"><img src="img/logo_U_Ledea_Bernard_Ouedraogo.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+    <div class="univ-logo mx-3" title="Université Libre du Burkina"><img src="img/logo_U_libre_bf.jpg" alt="" class="img-thumbnail rounded-circle" style="height: 50px;"></div>
+  </div>
+</div>
+
+
+  <!-- Navbar principale -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="historiqueNavLink" data-bs-toggle="dropdown">
+              Historique
+            </a>
+            <ul class="dropdown-menu bg-dark text-light">
+              <li><a class="dropdown-item text-light" href="historique.html#ujkz">UJKZ</a></li>
+              <li><a class="dropdown-item text-light" href="historique.html#ifoad">IFOAD</a></li>
+              <li><a class="dropdown-item text-light" href="historique.html#sia">Licence SIA</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="formationNavLink" data-bs-toggle="dropdown">
+              Formation
+            </a>
+            <ul class="dropdown-menu bg-dark text-light">
+              <li><a class="dropdown-item text-light" href="formations.html#licence">Licence</a></li>
+              <li><a class="dropdown-item text-light" href="formations.html#master">Master</a></li>
+              <li><a class="dropdown-item text-light" href="formations.html#debouches">Débouchés</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="documentationNavLink" data-bs-toggle="dropdown">
+              Documentation
+            </a>
+            <ul class="dropdown-menu bg-dark text-light">
+              <li><a class="dropdown-item text-light" href="documentation.html#doc-licence">Licence</a></li>
+              <li><a class="dropdown-item text-light" href="documentation.html#doc-master">Master</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="etablissementNavLink" data-bs-toggle="dropdown">
+              Établissement UJKZ
+            </a>
+            <ul class="dropdown-menu bg-dark text-light">
+              <li><a class="dropdown-item text-light" href="etablissement.html#sea">SEA</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#ibam">IBAM</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#igeed">IGEED</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#lac">LAC</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#issp">ISSP</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#svt">SVT</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#sh">SH</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#issdh">ISSDH</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#sds">SDS</a></li>
+              <li><a class="dropdown-item text-light" href="etablissement.html#autres">Autres</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bouton menu vertical -->
+  <div class="open-vertical-menu bg-primary text-white p-2" style="cursor:pointer;" onclick="toggleVerticalMenu()">☰ Menu</div>
+
+  <!-- Menu vertical -->
+  <div class="vertical-menu closed" id="menu_vertical">
+    <ul class="nav flex-column p-2">
+      <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="programmeNavLink" data-bs-toggle="dropdown">
+          Programme
+        </a>
+        <ul class="dropdown-menu bg-dark text-light">
+          <li><a class="dropdown-item text-light" href="programme.html#licence1">Licence 1</a></li>
+          <li><a class="dropdown-item text-light" href="programme.html#licence2">Licence 2</a></li>
+          <li><a class="dropdown-item text-light" href="programme.html#licence3">Licence 3</a></li>
+          <li><a class="dropdown-item text-light" href="programme.html#master">Master</a></li>
+        </ul>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="programmeNavLink" data-bs-toggle="dropdown">
+          personnel
+        </a>
+        <ul class="dropdown-menu bg-dark text-light">
+          <li><a class="dropdown-item text-light" href="personnel.html#enseignants">Enseignants</a></li>
+          <li><a class="dropdown-item text-light" href="personnel.html#atos">Personnel ATOS</a></li>
+          <li><a class="dropdown-item text-light" href="personnel.html#admin">Administratifs</a></li>
+          <li><a class="dropdown-item text-light" href="personnel.html#technique">Techniques</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link " href="actualites.html">Actualités & Emplois du temps</a></li>
+      <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="main-wrapper">
+    <div id="content" class="container py-4 animate__animated animate__fadeIn text-white">
+      <!-- Section Hero -->
+      <section class="text-center mb-5">
+        <div class="p-5 bg-dark rounded shadow-lg animate__animated animate__fadeInDown">
+          <h1 class="display-5 fw-bold text-info">Bienvenue sur IFOAD-UJKZ</h1>
+          <p class="lead mt-3">Votre passerelle vers l'enseignement supérieur à distance de qualité.</p>
+          <img src="img/logo_ifoad.jpg" class="btn btn-outline-info btn-lg mt-3 animate__animated animate__pulse animate__infinite logo" alt="logo IFOAD">
+        </div>
+      </section>
+
+      <!-- Slider Actualités -->
+<section class="text-center mb-5">
+  <div class="bg-success badge py-1 px-5 shadow mb-4">
+    <h3 class="mb-0 text-warning">Actualités & Événements</h3>
+  </div>
+  <div id="carouselActualites" class="carousel slide mb-5 shadow rounded" data-bs-ride="carousel">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="img/monter_couleurs.jpg" class="d-block w-100 rounded" alt="Événement 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-success bg-light bg-opacity-75 p-2 rounded">Montée des couleurs par les étudiants de l'IBAM !</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/ifoad_u_Auben.jpg" class="d-block w-100 rounded" alt="Événement 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-success bg-light bg-opacity-75 p-2 rounded">Recrutement d'étudiants à l'IFOAD - Université Aube Nouvelle !</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/projet_faso_laafi.jpg" class="d-block w-100 rounded" alt="Événement 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-success bg-light bg-opacity-75 p-2 rounded">Lancement officiel du projet FASO LAAFI !</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselActualites" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselActualites" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+      <!-- Témoignage -->
+      <section class="text-center mb-5 animate__animated animate__fadeIn animate__delay-4s">
+        <blockquote class="blockquote fs-4">
+          <img src="img/profil_richard.jpg" class="logo" alt="Etudiant de ifoad-ujkz">
+          <p>"IFOAD m'a permis de suivre ma passion. Une vraie révolution éducative."</p>
+          <footer class="blockquote-footer text-white">MARE Richard, Étudiant en genie civil</footer>
+        </blockquote>
+      </section>
+
+      <!-- Cartes info rapide -->
+      <section class="row text-center mb-5">
+        <div class="col-md-4">
+          <div class="p-4 bg-success rounded shadow-sm animate__animated animate__fadeInLeft animate__delay-1s">
+            <h4>+30 Programmes</h4>
+            <p>Des formations adaptées au marché actuel.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="p-4 bg-primary rounded shadow-sm animate__animated animate__fadeInUp animate__delay-2s">
+            <h4>100% en ligne</h4>
+            <p>Suivez vos cours où que vous soyez.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="p-4 bg-danger rounded shadow-sm animate__animated animate__fadeInRight animate__delay-3s">
+            <h4>Certifications Officielles</h4>
+            <p>Diplômes reconnus et valorisés.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actualités dynamiques -->   
+    <!-- Affiches -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <div class="bg-success badge py-1 px-5 shadow">
+          <h2 class="mb-0 text-center text-warning animate__animated animate__zoomIn">Affiches &amp; Visuels</h2>
+        </div>
+      </div>        
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 bg-dark border border-info animate__animated animate__fadeInUp">
+            <img src="img/president_uo.jpg" class="card-img-top" alt="Pr&eacute;sident de l'UO">
+            <div class="card-body">
+              <h5 class="card-title text-info">Le président de l'Université</h5>
+              <p class="card-text text-white">Lancement officiel des activités avec la participation des autorités universitaires. Le Pr&eacute;sident de l'Universit&eacute; Joseph Ki-Zerbo, <br><strong>le Pr Jean-Fran&ccedil;ois Silas KOBIANE</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-dark border border-success animate__animated animate__fadeInUp animate__delay-1s">
+            <img src="img/recrutement_ifoad.jpg" class="card-img-top" alt="Recrutement P24">
+            <div class="card-body">
+              <h5 class="card-title text-success">Recrutement</h5>
+              <p class="card-text text-white">IFOAD lance une campagne exceptionnelle de recrutement !.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-dark border border-warning animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="img/logo_ifoad.jpg" class="card-img-top" alt="Logo IFOAD">
+            <div class="card-body">
+              <h5 class="card-title text-warning">IFOAD-UJKZ</h5>
+              <p class="card-text text-white">IFOAD : un institut d'excellence en formation ouverte et &agrave; distance, reconnu pour ses innovations et la qualit&eacute; de ses &eacute;tudiants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+
+    <!-- Programmes d'inscription -->
+    <div class="mb-5">
+      <h3 class="mb-3">Programmes d'inscription</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>&Eacute;tape 1 :</strong> Cr&eacute;ation de votre compte &eacute;tudiant sur <strong><a href="https://www.campusfaso.bf">Campus Faso</a></strong></li>
+        <li class="list-group-item"><strong>&Eacute;tape 2 :</strong> Dans le menu choisissez candidatures sur test</li>
+        <li class="list-group-item"><strong>&Eacute;tape 3 :</strong> Remplir le formulaire avec les informations et dossiers demandés</li>
+        <li class="list-group-item"><strong>&Eacute;tape 4 :</strong>Finaliser l'inscription en reglant les frais d'inscription qui coûte 16500F</li>          
+        <li class="list-group-item"><strong>&Eacute;tape 4 :</strong>Attendre la date des compositions sur table</li>
+      </ul>
+    </div>
+
+    <!-- Annonces officielles -->
+    <div class="mb-5">
+      <h3 class="mb-3">Annonces officielles</h3>
+      <div class="alert alert-info shadow-sm" role="alert">
+        🔔 D&eacute;but des cours en ligne : <strong>15 Novembre 2025</strong>
+      </div>
+      <div class="alert alert-warning shadow-sm" role="alert">
+        📢 R&eacute;union d'information pour les nouveaux inscrits : <strong>12 Novembre 2025</strong>
+      </div>
+      <div class="alert alert-danger shadow-sm" role="alert">
+        📅 Date de début de d&eacute;p&ocirc;t des dossiers : <strong>15 Septembre 2025</strong>
+      </div>
+      <div class="alert alert-danger shadow-sm" role="alert">
+        📅 Date limite de d&eacute;p&ocirc;t des dossiers : <strong>01 Octobre 2025</strong>
+      </div>
+      <div class="alert alert-danger shadow-sm" role="alert">
+        📅 Date des compositions : <strong>15 Octobre 2025</strong>
+      </div>
+    </div>
+
+
+
+    <!-- Appel à l'action -->
+    <section class="text-center mt-5 animate__animated animate__fadeInUp animate__delay-3s">
+      <h2 class="text-light mb-3">Rejoignez la communauté IFOAD dès aujourd'hui !</h2>
+      <a href="https://www.campusfaso.bf" class="btn btn-lg btn-warning px-5 py-2 animate__animated animate__bounce">S'inscrire maintenant</a>
+    </section>
+
+    <!-- Communications -->
+    <div class="mb-5">
+      <h3 class="mb-3">Communications</h3>
+      <p class="fs-5">
+        Les communications officielles s'effectuent uniquement via la plateforme ou les adresses emails institutionnelles. Pensez &agrave; consulter r&eacute;guli&egrave;rement votre espace personnel pour ne rien manquer.
+      </p>
+    </div>
+
+    <!-- Directives -->
+    <div class="mb-5">
+      <h3 class="mb-3">Directives &amp; R&egrave;glements</h3>
+      <p class="fs-5">
+        En acc&eacute;dant &agrave; cette plateforme, vous vous engagez &agrave; respecter les r&egrave;gles de bonne conduite. Tout manquement pourra entra&icirc;ner une restriction temporaire ou d&eacute;finitive de votre acc&egrave;s.
+      </p>
+    </div>
+
+    
+
+    </div>
+  </div>
+  
+
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-light mt-5">
+    <p> Tout droit résrevé &copy;IFOAD - UJKZ 2024-2025 </p>
+    <p>Universités publiques du Burkina Faso : UJKZ, NAZI BONI, Koudougou, Dédougou...</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascripts.js"></script>
+</body>
+</html>
